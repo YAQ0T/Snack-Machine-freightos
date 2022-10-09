@@ -1,0 +1,40 @@
+.coins {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+.moneySlots-head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+
+  justify-items: center;
+}
+.credit {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+.container-money {
+}
+.purchaseState {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.clear,
+.purchase {
+  width: 75px;
+  cursor: pointer;
+  margin-top: 20px;
+}

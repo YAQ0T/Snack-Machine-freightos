@@ -1,0 +1,17 @@
+.snacksItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+.item {
+  display: grid;
+  justify-items: center;
+}
+.item {
+  background-color: antiquewhite;
+  width: 60px;
+  height: 30px;
+}
+#snacks-head {
+  margin-left: 50px;
+}
