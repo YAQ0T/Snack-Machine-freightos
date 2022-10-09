@@ -14,21 +14,24 @@ export default class Keypad extends Component {
     };
   }
   fillItem = (e) => {
-    if (parseInt(e.target.innerHTML) != NaN) {
-      let temp = this.state.selectedItem + e.target.innerHTML;
+    let temp = this.state.selectedItem + e.target.innerHTML;
 
+    if (
+      parseInt(e.target.innerHTML) >= 0 &&
+      parseInt(e.target.innerHTML) <= Infinity
+    ) {
       if (this.state.flagNumbers) {
         this.setState({
           selectedItem: temp,
           flagNumbers: 0,
         });
-      } else {
-        if (this.state.flagLetters) {
-          this.setState({
-            selectedItem: temp,
-            flagLetters: 0,
-          });
-        }
+      }
+    } else {
+      if (this.state.flagLetters) {
+        this.setState({
+          selectedItem: temp,
+          flagLetters: 0,
+        });
       }
     }
   };
